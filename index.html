@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bags website</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <h1 class = "col-12">Damon's Store</h1>
+        <!-- nav-bar -->
+        <div class="container col-12" >
+            <span class="nav-bar" id = "home-btn" onmouseover="navBarfun(event,'home-page')"><h2>Home</h2></span>
+            <span class="nav-bar active" id = "bags-btn" onmouseover="navBarfun(event,'bags-showUp')"><h2>Bags for Women</h2></span>
+            <span class="nav-bar" id = "newrelease-btn" onmouseover="navBarfun(event,'newRelease')"><h2>New Release</h2></span>
+            <span class="cart-icon" id="cartbtn" onclick="toggleCart()"><h2><i class="fas fa-shopping-cart"></i>Cart(<span id="cart-count">0</span>)</h2></span>
+        </div>  
+    </div>
+    <!-- header end -->
+    <hr>
+
+
+    <!-- mid-part -->
+    <div id="mid-part">
+        <div id="home-page" class="page-content">
+            <p class="fade-in"> The curated corner for chic and practical women's crossbody and shoulder bags.<br>
+                Here,<br>
+                every piece is a blend of style and utility, <br>
+                perfect for the fashion-savvy woman on the go. <br>
+                Dive into our collection where elegance meets everyday functionality, <br>
+                and find the perfect accessory to complete your look. Shop with us and carry your world in style.</p>
+        </div>
+
+        <div id="bags-showUp" class="page-content ">
+            <div class="card">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="/img/products_img/247323/WechatIMG179.jpeg" alt="img1" >
+                        <div class="text">Black</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="/img/products_img/247323/WechatIMG195.jpeg" alt="img2" >
+                        <div class="text">White</div>
+                    </div> 
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/products_img/247323/IMG_2068.JPG" alt="img3" >
+                        <div class="text">Black</div>
+                    </div> 
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/products_img/247323/IMG_2074.JPG" alt="img4" >
+                        <div class="text">White</div>
+                    </div>     
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div id="price" style="text-align: center;">
+                    <p>$20</p>
+                </div>
+                <div id="buyer" style="text-align: center;">
+                    <button id="addTocart">Add to cart</button>
+                </div>
+             </div>
+        </div>
+
+        <div id="newRelease" class="page-content">
+            <p>wait...</p>
+        </div>
+
+        <!-- 购物车摘要面板 -->
+        <div id="cart-summary" class="cart-summary">
+            <!-- 购物车摘要内容，您可以根据实际情况来定制里面的内容 -->
+            <div class="cart-items">
+            <!-- 购物车商品列表 -->
+            </div>
+            <div class="cart-total">
+            <!-- 总价计算 -->
+            </div>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-cart" onclick="toggleCart()">Close</button>
+        </div>
+
+
+    </div>
+    <!-- mid-part end -->
+
+    <!-- footer -->
+    <div class="footer">
+
+
+    </div>
+    <!-- footer end -->
+
+    <script src="index.js"></script>
+</body>
+</html>
