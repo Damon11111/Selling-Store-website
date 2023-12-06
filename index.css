@@ -175,21 +175,20 @@ img{
 }
 
 .nav-bar:hover {
-  background-color:black; /* 您希望的悬停时的背景颜色 */
-  font-weight: bold; /* 加粗文字 */
-  color: white; /* 改变文字颜色 */
-  /* 您还可以添加其他样式，如边框、阴影等 */
+  background-color:black; 
+  font-weight: bold; 
+  color: white; /
 }
 
 
 
 /* cart */
 .cart-icon {
-  position: fixed; /* 固定定位，相对于视口 */
-  top: -70px; /* 距离顶部10px */
-  right: -1100px; /* 距离右侧10px */
+  position: fixed; 
+  top: -70px; 
+  right: -1100px; 
   cursor: pointer;
-  z-index: 1000; /* 确保它在页面的其他内容之上 */
+  z-index: 1000; 
 }
 #cartbtn {
   /* Styling for cart button */
@@ -210,27 +209,27 @@ img{
 }
 
 .fas.fa-shopping-cart {
-  font-size: 1.5em; /* 设置图标大小 */
+  font-size: 1.5em; 
 }
 
-/* 购物车摘要面板样式 */
+
 .cart-summary {
-  position: fixed; /* 或absolute，取决于您想要的效果 */
+  position: fixed; 
   top: 100px;
-  right: -100%; /* 初始时隐藏在屏幕右侧 */
-  width: 300px; /* 或您希望的宽度 */
+  right: -100%; 
+  width: 300px; 
   height: 60%;
   background-color: white;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s; /* 平滑过渡动画 */
-  z-index: 1000; /* 确保在其他内容之上 */
-  overflow-y: auto; /* 如果内容很多，需要滚动 */
+  transition: right 0.3s;
+  z-index: 1000; 
+  overflow-y: auto; 
 }
 
 
 
 .cart-summary.open {
-  right: 0; /* 当添加 'open' 类时，购物车摘要面板应该完全可见 */
+  right: 0; 
 }
 
 /* cart end */
@@ -244,23 +243,23 @@ img{
   margin: auto;
   text-align: center;
   font-family: arial;
-  width: 100%; /* 或者您想要的固定宽度 */
+  width: 100%; 
   padding: 16px;
   box-sizing: border-box;
 }
 
 #buyer {
-  /* 按钮居中 */
+  
   display: flex;
   justify-content: center;
   padding: 16px;
 }
 
 .card img {
-  /* 使图片充满卡片但保持它们的比例 */
-  width: 200px; /* 或者卡片容器的宽度 */
-  height: 200px; /* 保持图片比例 */
-  object-fit: cover; /* 裁剪图片以适应容器 */
+  
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
 
