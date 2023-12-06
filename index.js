@@ -60,17 +60,17 @@ function toggleCart() {
     var cartSummary = document.getElementById('cart-summary');
     if (cartSummary.classList.contains('open')) {
         cartSummary.classList.remove('open');
-        cartSummary.style.right = '-400px'; // 将购物车摘要面板移出视图
+        cartSummary.style.right = '-400px'; 
     } else {
         cartSummary.classList.add('open');
-        cartSummary.style.right = '0'; // 将购物车摘要面板移入视图
+        cartSummary.style.right = '0'; 
     }
 }
 
 //cart end
 
 
-// 确保 DOM 完全加载后再运行脚本
+
 document.addEventListener('DOMContentLoaded', function () {
     // Product data
     var products = {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
         totalItems++;
       }
       document.querySelector('.cart-total').innerText = 'Total: $' + total.toFixed(2);
-      document.getElementById('cart-count').innerText = totalItems; // 更新购物车数量
+      document.getElementById('cart-count').innerText = totalItems; 
     }
   
     // Bind click event to add to cart button
